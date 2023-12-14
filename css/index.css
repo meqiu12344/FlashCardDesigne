@@ -1,0 +1,247 @@
+/* Font : Eina 01 Bolt
+           Eina 01 Regular 
+Kolory : Szary #959291 
+              Pomarańcz #ff9a00
+              Granat #161642 */
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Eina01-Regular";
+    width: 100%;
+}
+
+.navbar{
+    height: 15vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 100%;
+}
+
+.logo img{
+    width: auto;
+    height: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+.navbar-collapse{
+    flex-grow: unset;
+    padding-bottom: 50px;
+}
+
+.my-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-nav ul{
+    margin: 0;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.my-nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+.my-nav form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #959291;
+    border-radius: 20px;
+}
+
+.search-box{
+    width: 90%;
+    border: none;
+    border-radius: inherit;
+    padding: 3px;
+}
+
+.search-box:focus{
+    outline: none;
+}
+
+.btn-search-submit{
+    border: none;
+    height: 100%;
+    cursor: pointer;
+    border-radius: inherit;
+}
+
+
+
+
+/* -------------------------------------     MAIN VIEW    -------------------------------- */
+
+
+.main-view{
+    width: 100%;
+    height: 84.9vh;
+    background-image: url('../images/bg-home.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-view .text{
+    position: absolute;
+    left: 10%;
+    top: 25%;
+}
+
+.text h1{
+    font-size: 70px;
+    color: #ff9a00;
+    font-weight: 900;
+}
+
+.text p{
+    width: 50%;
+    font-size: 18px;
+    color: #959291;
+}
+
+.text a{
+    padding: 20px 50px 20px 50px;
+    background-color: #ff9a00;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 767px) {
+    .navbar{
+        width: 100%;
+    }
+
+    .my-nav ul{
+        width: 100%;
+        flex-direction: column;
+        z-index: 1;
+        background-color: #fff;
+    }
+
+    .main-view .text{
+        left: 30px;
+        right: 30px;
+    }
+
+    .text h1{
+        font-size: 30px;
+    }
+
+    .text p{
+        text-shadow: 4px 4px 6px rgba(255, 255, 255, 1);
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+
+/* -=------------------------------------------- ABC -=------------------------------------------- */
+
+.language-level{
+    padding-bottom: 150px;
+    width: 100%;
+}
+
+.language-level .img{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.language-level h2{
+    color: orange;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+    letter-spacing: -1px;
+}
+
+.language-level h1{
+    color: orange;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+    letter-spacing: 1.5px;
+}
+
+div{
+    padding: auto;  
+}
+
+.languange-level div > p{
+    text-align: center;
+    color: grey;
+    font-stretch:ultra-expanded;
+    margin: 0px;
+}
+
+.left, .right{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.language-level p{
+    text-align: justify;
+}
+
+.in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.right{
+    margin-top: 120px;    
+}
+
+@media screen and (max-width: 850px){
+    .left, .right{
+        width: 90%;
+    }
+
+    .in{
+        flex-direction: column;
+    }
+}
+
+
+/* ----------------------------------------------- advantages ---------------------------------- */
+
+
+.advantages{
+    width: 100%;
+    height: 30vh;
+    background-color: #161642;
+
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
